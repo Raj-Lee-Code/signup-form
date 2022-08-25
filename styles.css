@@ -1,6 +1,8 @@
-html, body{
+body{
+    display: flex;
     margin: 0px;
     padding: 0px;
+    justify-content: flex-start;
 }
 
 .leftSideContainer {
@@ -13,30 +15,101 @@ html, body{
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .fadedWords{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100px;
+    text-align: center;
+    position: relative;
+   
+    margin: 0px;
+    width: 40vw;
+    height: auto;
     background: black;
     opacity: 0.5;
     color: white;
-    top: 5rem;
-    text-align: center;
+    top: 10vh;
+    gap: 1vw;
     font-size: 2.2rem;
     font-family: roboto;
+    
 }
-.vikingPic {
-    width: 90px;
-    height: 90px;
-}
+
 
 img[src="./pictures/odin-lined.png" ]{
     margin: 0px;
     width: 90px;
     height: 90px;
 }
+
+.rightContainer {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+ 
+}
+.topRight{
+    position: relative;
+    height:33vh;
+    background: whitesmoke;
+    font-size: 2vw;
+    padding-left: 2vh;
+}
+.intro{
+    padding-top: 4vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2rem;
+}
+.intro2{
+    display:inline;
+    padding-left: 2vh;
+    font-size: 2rem;
+}
+.midRight{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    height: 33vh;
+}
+.title{
+    margin: 0px;
+    margin-left: 2vw;
+}
+.form{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1vw;
+    padding: 0px 0px 0px 2vw;
+    margin-top: 0px
+}
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bottomRight{
+    height:33vh;
+    padding-left: 15vw;
+    padding-top: 3vh;
+    background: whitesmoke;
+}
+.button{
+    height: 5vh;
+    width: 15vh;
+    background-color: #A0E6FF;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border: none;
+    box-shadow: 2px 2px 5px ;
+
+}
+button:hover { background-color: steelblue; color: #A0E6FF; }
