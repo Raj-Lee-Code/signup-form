@@ -1,0 +1,42 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.leftSideContainer {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+}
+
+.leftPicture img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+.fadedWords{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: black;
+    opacity: 0.5;
+    color: white;
+    top: 5rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: roboto;
+}
+.vikingPic {
+    width: 90px;
+    height: 90px;
+}
+
+img[src="./pictures/odin-lined.png" ]{
+    margin: 0px;
+    width: 90px;
+    height: 90px;
+}
