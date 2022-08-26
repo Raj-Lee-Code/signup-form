@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -63,12 +64,12 @@
 
                     <div class="label">
                         <label for="password">Password: </label>
-                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must have atleast one number, one upper and lower case letter, and atleast 8 characters "required>
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must have atleast one number, one upper and lower case letter, and atleast 8 characters " required>
                     </div>
 
                     <div class="label">
                         <label for="confirm">Confirm : </label>
-                        <input type="password" id="confirm" minlength="8" title="Please have atleast 8 characters"required>
+                        <input type="password" id="confirm" minlength="8" title="Please have atleast 8 characters" onblur="verify()"required>
                     </div>
                     
                     <button class="button"> Create Account</button>
