@@ -50,6 +50,7 @@ img[src="./pictures/odin-lined.png" ]{
     flex-wrap: nowrap;
     justify-content: center;
     position: relative;
+    height: 100vh;
  
 }
 .topRight{
@@ -112,4 +113,21 @@ img[src="./pictures/odin-lined.png" ]{
     box-shadow: 2px 2px 5px ;
 
 }
+.input{
+    border: none;
+}
 button:hover { background-color: steelblue; color: #A0E6FF; }
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: green;
+  }
+

@@ -40,22 +40,22 @@
                 <div class="four">
                     <div class="label">
                       <label for="firstname">First Name: </label>
-                      <input type="text" id="'firstname">
+                      <input type="text" id="'firstname"placeholder="John" required>
                     </div>
 
                     <div class="label">
                       <label for="lastname">Last Name: </label>
-                      <input type="text" id="lastname">
+                      <input type="text" id="lastname" placeholder="Smith" required>
                     </div>
 
                     <div class="label">
                         <label for="phone">Phone Num: </label>
-                        <input type="text" id="phone">
+                        <input type="text" id="phone" pattern="(?=.*\d).{8,}" title="Must be in 10 digit format ex. 0123456789" placeholder="0123456789" required>
                     </div>
 
                     <div class="label">
-                        <label for="email">Email:  </label>
-                        <input type="email" id="email">
+                        <label for="email">Email :  </label>
+                        <input type="email" id="email" placeholder="John-Smith@gmail.com" title="Must be in something@something.com format"required>
                     </div>
                 </div>
 
@@ -63,20 +63,22 @@
 
                     <div class="label">
                         <label for="password">Password: </label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must have atleast one number, one upper and lower case letter, and atleast 8 characters "required>
                     </div>
 
                     <div class="label">
-                        <label for="confirm">Confirm Password: </label>
-                        <input type="password" id="confirm">
+                        <label for="confirm">Confirm : </label>
+                        <input type="password" id="confirm" minlength="8" title="Please have atleast 8 characters"required>
                     </div>
-
+                    
+                    <button class="button"> Create Account</button>
                 </div>
+                
             </form>
         </div>
 
         <div class="bottomRight">
-           <button class="button"> Create Account</button>
+            
            <p>Already have an account? <a href="url">log in</a></p>
 
         </div>
@@ -87,3 +89,5 @@
 
 </body>
 </html>
+
+
